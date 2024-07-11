@@ -238,6 +238,11 @@ button.main-button:hover {
   background: transparent;
 }
 
+.logo img{
+  width: 100px;
+  height: auto;
+}
+
 .header-area .main-nav .logo {
   line-height: 80px;
   color: #191a20;
@@ -266,6 +271,8 @@ button.main-button:hover {
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
 .header-area .main-nav .nav li {
@@ -619,7 +626,7 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../images/1.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -633,7 +640,7 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size: 45px;
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -835,22 +842,22 @@ Clients Data
 
 .client-data-item {
   border-radius: 5px;
-  padding: 60px 30px;
+  padding: 30px 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 20px rgba(230, 125, 13, 0.5);
   background-color: #ffffff;
   margin: 20px 0;
 }
 
 .client-data-item h2 {
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 600;
-  color: #333;
+  color: #db962d;
   margin-bottom: 10px;
 }
 
 .client-data-item p {
-  font-size: 18px;
+  font-size: 12px;
   color: #777;
   margin: 0;
 }
@@ -863,17 +870,22 @@ Pricing
 */
 
 /* Pricing Section CSS */
+
+#pricing{
+  margin-top: 50px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
-  margin: 80px 100px;
+  grid-gap: 25px;
+  margin: 50px 100px;
   /* margin-top: 50px; */
   padding: 30px 30px;
 }
 
 .pricing-table {
-  box-shadow: 0px 0px 18px #ccc;
+  box-shadow: 5px 5px 20px rgba(230, 125, 13, 0.5);
   text-align: center;
   padding: 30px 0px;
   border-radius: 5px;
@@ -907,9 +919,9 @@ Pricing
 
 .pricing-table .content .price h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 .pricing-table .content ul {
@@ -1063,6 +1075,7 @@ testimonials
 #testimonials .author img {
   max-width: 120px;
   margin-bottom: -60px;
+  border-radius: 100%;
 }
 
 .owl-carousel .owl-nav button.owl-next span {
@@ -1128,8 +1141,7 @@ footer
 }
 
 footer {
-  margin-top: 200px;
-  padding-top: 120px;
+  margin-top: 100px;
   background-image: url(../images/footer-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1138,7 +1150,7 @@ footer {
 }
 
 footer .footer-content {
-  padding: 120px 0px;
+  padding: 30px 0px;
 }
 
 .contact-form {
@@ -1153,6 +1165,7 @@ footer .footer-content {
 
 footer .right-content {
   align-self: center;
+  margin-top: 50px;
 }
 
 .contact-form input,
@@ -1290,6 +1303,65 @@ footer .sub-footer p {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
+}
+
+.contact-alternatives {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-alternatives h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #fba70b;
+  font-weight: 700;
+}
+
+.contact-alternatives p {
+  font-size: 15px;
+  color: #666;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons .icon {
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.contact-icons .icon i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  /* border: 1px solid white; */
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.contact-icons .icon a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-icons .icon a:hover {
+  color: #9cb7d4;
+}
+
+@media (max-width: 768px) {
+  .contact-icons {
+      flex-wrap: wrap;
+  }
+
+  .contact-icons .icon {
+      margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 991px) {
