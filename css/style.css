@@ -1352,12 +1352,19 @@ Our Client
   margin-bottom: 40px;
 }
 
+
 #our-clients .clients-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+#our-clients .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+/* Client Logo Styles */
 #our-clients .client-logo {
   margin: 15px;
   width: 150px;
@@ -1383,28 +1390,64 @@ Our Client
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 @media (max-width: 1200px) {
   #our-clients .client-logo {
     width: 120px;
     height: 120px;
   }
 }
+
 @media (max-width: 992px) {
   #our-clients .client-logo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+  #our-clients .clients-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #our-clients .client-logo img {
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
+
 @media (max-width: 768px) {
   #our-clients .client-logo {
     width: 80px;
     height: 80px;
+    margin: 10px;
+  }
+  #our-clients .clients-grid {
+    justify-content: space-evenly;
+  }
+  #our-clients .client-logo img {
+    padding: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
+
 @media (max-width: 576px) {
   #our-clients .client-logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+  #our-clients .clients-grid {
+    justify-content: space-evenly;
+  }
+  #our-clients .client-logo img {
+    padding: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -1668,9 +1711,21 @@ footer .sub-footer p {
   footer .footer-content {
     padding: 30px 0px!important;
   }
-  .contact-icons .icon a {
-    font-size: 18px;
+
+  .contact-icons .icon i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
   }
+  .contact-icons .icon a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
 }
 @media (max-width: 768px) {
   footer {
@@ -1685,10 +1740,20 @@ footer .sub-footer p {
   .contact-form input,
   .contact-form textarea {
     height: 40px;
+    font-size: 10px;
+  }
+  .contact-icons .icon i {
+    margin-right: 10px;
     font-size: 12px;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
   }
   .contact-icons .icon a {
-    font-size: 16px;
+    color: #333;
+    font-size: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
 }
 @media (max-width: 576px) {
@@ -1702,6 +1767,19 @@ footer .sub-footer p {
   }
   .contact-form textarea {
     height: 120px;
+  }
+  .contact-icons .icon i {
+    margin-right: 10px;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
+  }
+  .contact-icons .icon a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
 }
 
